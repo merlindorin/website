@@ -2,9 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import PostContent from "../components/PostContent"
-import PostHeader from "../components/PostHeader"
-import PostFooter from "../components/PostFooter"
-import Layout from "../components/Layout"
+import PostHeader  from "../components/PostHeader"
+import PostFooter  from "../components/PostFooter"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -12,11 +11,11 @@ export default function Template({ data }) {
 
   console.log(data)
   return (
-    <Layout>
+    <>
       <PostHeader {...frontmatter} {...fields} />
       <PostContent content={html} />
       <PostFooter {...frontmatter} {...fields} />
-    </Layout>
+    </>
   )
 }
 

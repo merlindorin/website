@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 import { fontSize as size } from "../constants"
 
-import Layout    from "../Layout"
 import PostEntry from "../PostEntry"
 import Social    from "../Social"
 import H1        from "../H1"
@@ -30,7 +29,7 @@ const AuthorPage = (
   },
 ) => {
   return (
-    <Layout>
+    <>
       <Section>
         <Avatar {...avatar}/>
         <Info>
@@ -49,7 +48,7 @@ const AuthorPage = (
       </Section>
       <Next/>
       <Entries entries={entries}/>
-    </Layout>)
+    </>)
 }
 
 AuthorPage.propTypes = {

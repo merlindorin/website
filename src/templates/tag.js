@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import TagPage from "../components/TagPage"
+import TagPage   from "../components/TagPage"
 import PostEntry from "../components/PostEntry"
-import Layout from "../components/Layout"
 
 const Entries = ({ entries }) => {
   return entries.map(entry => (
@@ -25,7 +24,7 @@ export default function Template(all) {
     : null
 
   return (
-    <Layout>
+    <>
       <TagPage
         title={title}
         description={html}
@@ -33,7 +32,7 @@ export default function Template(all) {
         image={resolutions}
       />
       <Entries entries={entries} />
-    </Layout>
+    </>
   )
 }
 
