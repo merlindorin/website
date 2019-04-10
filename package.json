@@ -28,6 +28,7 @@
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -40,6 +41,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
+    "deploy:github": "gatsby build && gh-pages -d public",
     "serve": "gatsby serve"
   },
   "repository": {

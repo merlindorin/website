@@ -16,7 +16,7 @@ import Info    from "./Info"
 import Url     from "./Url"
 import Bio     from "./Bio"
 
-const Entries = ({ entries }) => entries.map(entry => <PostEntry key={entry.frontmatter.title} {...entry.frontmatter} />)
+const Entries = ({ entries }) => entries.map(entry => <PostEntry key={entry.frontmatter.title} {...entry.frontmatter}  {...entry.fields} />)
 
 const AuthorPage = (
   {

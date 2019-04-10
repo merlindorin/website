@@ -55,6 +55,11 @@ export const pageQuery = graphql`
           }
         }
       }
+      fields {
+        readingTime {
+          time
+        }
+      }
     }
   }
 `
