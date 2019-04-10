@@ -1,21 +1,55 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+import PostEntry from "../components/PostEntry"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) =>
+  edges.map(edge => (
+    <PostEntry
+      key={edge.node.id}
+      {...edge.node.frontmatter}
+      {...edge.node.fields}
+    />
+  ))
+
+export default res => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Welcome" />
+    <IndexPage {...res} />
   </Layout>
 )
 
-export default IndexPage
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { type: { eq: "post" } } }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            tags
+            author
+            excerpt
+          }
+          fields {
+            readingTime {
+              time
+            }
+          }
+        }
+      }
+    }
+  }
+`
