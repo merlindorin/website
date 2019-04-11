@@ -10,6 +10,7 @@ module.exports = {
       github: "https://github.com",
       instagram: "https://instagram.com",
       medium: "https://medium.com",
+      keybase: "https://medium.com",
     },
   },
   plugins: [

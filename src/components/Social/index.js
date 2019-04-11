@@ -6,8 +6,16 @@ import MediumIcon    from "../../svgs/medium.svg"
 import GithubIcon    from "../../svgs/github.svg"
 import LinkedinIcon  from "../../svgs/linkedin.svg"
 import InstagramIcon from "../../svgs/instagram.svg"
+import KeybaseIcon   from "../../svgs/keybase.svg"
 
 const TwitterIconStyled = styled(TwitterIcon)`
+  transition: none;
+  fill: currentColor;
+  stroke: none;
+  width: 24px;
+  height: 20px;
+`
+const KeybaseStyled = styled(KeybaseIcon)`
   transition: none;
   fill: currentColor;
   stroke: none;
@@ -63,7 +71,7 @@ const SocialLink = styled.a`
   color: #ccd1d9;
 `
 
-export default ({ twitter, github, linkedin, instagram, medium }) => (
+export default ({ twitter, github, linkedin, instagram, medium, keybase }) => (
   <Social>
     {twitter
       ? <SocialLink href={twitter}><TwitterIconStyled/></SocialLink>
@@ -83,6 +91,10 @@ export default ({ twitter, github, linkedin, instagram, medium }) => (
     }
     {medium
       ? <SocialLink href={medium}><MediumIconStyled/></SocialLink>
+      : null
+    }
+    {keybase
+      ? <SocialLink href={keybase}><KeybaseStyled/></SocialLink>
       : null
     }
   </Social>

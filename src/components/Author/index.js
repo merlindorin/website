@@ -43,6 +43,7 @@ const AuthorPage = (
             github={social.github}
             instagram={social.instagram}
             medium={social.medium}
+            keybase={social.keybase}
           />
         </Info>
       </Section>

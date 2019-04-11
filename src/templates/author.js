@@ -42,6 +42,7 @@ export const pageQuery = graphql`
           linkedin
           github
           instagram
+          keybase
           medium
         }
         avatar {

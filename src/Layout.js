@@ -30,6 +30,7 @@ const Layout = ({ children }) => (
               medium
               instagram
               twitter
+              keybase
             }
           }
         }

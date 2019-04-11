@@ -33,7 +33,7 @@ export default ({ readingTime, title, excerpt, date, tags = [] }) => {
       `} render={({ markdownRemark: { frontmatter: { firstname, lastname, path, avatar } } }) => {
         return (
         <article>
-          {tags.map(tag => (<Link to={`/tags/${tag.toLowerCase()}`} key={tag}><Tag>{tag}</Tag></Link>))}
+          {tags[0] ? (<Link to={`/tags/${tags[0].toLowerCase()}`} key={tags[0]}><Tag>{tags[0]}</Tag></Link>) : null}
           <H2 size={size.EXTRA}>{title}</H2>
           <Metadata
             path={path}
