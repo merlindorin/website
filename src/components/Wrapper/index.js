@@ -2,9 +2,11 @@ import styled from "styled-components"
 
 const Wrapper = styled.div`
   position: relative;
-  width: 85%;
-  max-width: 760px;
-  margin: 0 auto;
+  padding: 80px;
+  
+  @media only screen and (max-width: 640px) {
+    padding: 0 40px;
+  }
 `
 
 export default Wrapper

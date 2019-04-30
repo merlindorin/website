@@ -13,6 +13,10 @@ const Header = styled.div`
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  
+  @media only screen and (max-width: 640px) {
+    padding: 40px 0 80px 0;
+  }
 `
 
 const StyledLogo = styled(Logo)`

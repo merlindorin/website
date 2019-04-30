@@ -71,8 +71,8 @@ const SocialLink = styled.a`
   color: #ccd1d9;
 `
 
-export default ({ twitter, github, linkedin, instagram, medium, keybase }) => (
-  <Social>
+export default ({ twitter, github, linkedin, instagram, medium, keybase, className }) => (
+  <Social className={className}>
     {twitter
       ? <SocialLink href={twitter}><TwitterIconStyled/></SocialLink>
       : null

@@ -9,13 +9,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header  from "./components/Header"
-import Footer  from "./components/Footer"
-import Wrapper from "./components/Wrapper"
+import Header    from "./components/Header"
+import Footer    from "./components/Footer"
+import Wrapper   from "./components/Wrapper"
 
 import "./styles/font.css"
 import "./styles/reset.css"
 import "./styles/styles.css"
+import Container from "./components/Container"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -41,11 +42,13 @@ const Layout = ({ children }) => (
         siteMetadata: { title, social },
       },
     }) => (
-      <>
+      <Wrapper>
         <Header siteTitle={title} />
-        <Wrapper>{children}</Wrapper>
+        <Container>
+          {children}
+        </Container>
         <Footer social={social} />
-      </>
+      </Wrapper>
     )}
   />
 )
