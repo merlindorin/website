@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{177:function(n,o,a){"use strict";a.r(o);var i=a(1);o.default=i.a.div.withConfig({displayName:"Info",componentId:"sc-1ljhqqa-0"})([""])}}]);
+//# sourceMappingURL=component---src-pages-author-info-js-f9fcfbbbb7957b07469a.js.map

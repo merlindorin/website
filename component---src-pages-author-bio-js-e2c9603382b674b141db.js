@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{179:function(i,n,o){"use strict";o.r(n);var p=o(1);n.default=p.a.div.withConfig({displayName:"Bio",componentId:"sc-1kbb7rn-0"})(["p{font-size:17px;line-height:36px;margin:0 0 20px;color:#535763;}"])}}]);
+//# sourceMappingURL=component---src-pages-author-bio-js-e2c9603382b674b141db.js.map
