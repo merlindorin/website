@@ -1,16 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `Romain DARY`,
+    siteUrl: `https://romain.dary.io`,
     description: `Personal Website.`,
     author: `@iam-merlin`,
     social: {
       website: "https://romain.dary.io",
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      instagram: "https://instagram.com",
-      medium: "https://medium.com",
-      keybase: "https://medium.com",
+      twitter: "https://twitter.com/iam_merlin",
+      linkedin: "https://fr.linkedin.com/in/romaindary",
+      github: "https://github.com/iam-merlin",
+      instagram: "https://www.instagram.com/iam_merlin",
+      medium: "https://medium.com/@iam_merlin",
+      keybase: "https://keybase.io/merlindorin",
     },
   },
   plugins: [
@@ -85,5 +86,6 @@ module.exports = {
         navigateFallbackWhitelist: [],
       },
     },
+    `gatsby-plugin-sitemap`
   ],
 }

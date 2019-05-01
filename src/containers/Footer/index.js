@@ -59,6 +59,7 @@ export default ({ social: { github, linkedin, medium, instagram, twitter, keybas
         Made With <HeartIcon/> & <CoffeeIcon/>
       </Disclaimer>
       <PublishedWith href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby.</PublishedWith>
+      <PublishedWith href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby.</PublishedWith>
     </StyledCopyright>
     <StyledSocial
       github={github}
