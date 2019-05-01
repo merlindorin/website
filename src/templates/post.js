@@ -9,7 +9,6 @@ export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, fields, html } = markdownRemark
 
-  console.log(data)
   return (
     <>
       <PostHeader {...frontmatter} {...fields} />

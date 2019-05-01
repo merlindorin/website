@@ -1,17 +1,16 @@
 import React     from "react"
 import PropTypes from "prop-types"
 
-import Html    from "../PostContent"
-import H1      from "../H1"
-import Section from "../Section"
-import Avatar  from "../Avatar"
+import Html   from "../../components/PostContent"
+import H1     from "../../components/H1"
+import Avatar from "../../components/Avatar"
 
 const TagPage = ({ title, description, image }) => (
-  <Section>
+  <>
     <Avatar {...image} />
     <H1 capitalize>{title}</H1>
     <Html content={description}/>
-  </Section>
+  </>
 )
 
 TagPage.propTypes = {

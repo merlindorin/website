@@ -8,7 +8,7 @@ import NavigationBox from "./NavigationBox"
 const HeaderBox = styled.div`
   display: flex;
   width: 100%;
-  padding: 60px;
+  padding-bottom: 80px;
   justify-content: space-between;
   
   @media only screen and (max-width: 640px) {

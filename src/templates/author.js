@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Author from "../components/Author"
+import Author from "../pages/Author"
 
 export default function Template(all) {
   const { data, pageContext } = all

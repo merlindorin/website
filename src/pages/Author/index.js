@@ -1,16 +1,15 @@
 import React     from "react"
 import PropTypes from "prop-types"
 
-import { fontSize as size } from "../constants"
+import { fontSize as size } from "../../components/constants"
 
-import PostEntry from "../PostEntry"
-import Social    from "../Social"
-import H1        from "../H1"
-import H2        from "../H2"
-import Next      from "../Next"
-import Avatar    from "../Avatar"
+import PostEntry from "../../components/PostEntry"
+import Social    from "../../components/Social"
+import H1        from "../../components/H1"
+import H2        from "../../components/H2"
+import Next      from "../../components/Next"
+import Avatar    from "../../components/Avatar"
 
-import Section from "./Section"
 import Info    from "./Info"
 import Url     from "./Url"
 import Bio     from "./Bio"
