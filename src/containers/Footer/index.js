@@ -85,8 +85,8 @@ export default ({ social: { github, linkedin, medium, instagram, twitter, keybas
         Made With <HeartIcon/> & <CoffeeIcon/>
       </Disclaimer>
       <div>
-        <PublishWithGatsby href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby</PublishWithGatsby>
-        <ForkMe href="https://github.com/iam-merlin/website" target="_blank">Fork me on Github.</ForkMe>
+        <PublishWithGatsby rel="noreferrer" href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby</PublishWithGatsby>
+        <ForkMe rel="noreferrer" href="https://github.com/iam-merlin/website" target="_blank">Fork me on Github.</ForkMe>
       </div>
     </StyledCopyright>
     <StyledSocial
