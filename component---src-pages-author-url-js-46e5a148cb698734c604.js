@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{177:function(o,n,a){"use strict";a.r(n);var i=a(1);n.default=i.a.a.withConfig({displayName:"Url",componentId:"s6xmb6-0"})(["display:block;font-size:17px;font-weight:600;margin:0 0 20px;color:#99a0b3;"])}}]);
+//# sourceMappingURL=component---src-pages-author-url-js-46e5a148cb698734c604.js.map
