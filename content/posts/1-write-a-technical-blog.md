@@ -1,7 +1,7 @@
 ---
 type: post
-path: "/blog/write-a-technical-blog"
-date: "2019-11-07"
+path: "/write-a-technical-blog"
+date: "2019-04-07"
 title: "Should I write a technical blog"
 author: "romain-dary"
 tags:
