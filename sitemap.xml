@@ -4,11 +4,6 @@
 <url> <loc>https://romain.dary.io/authors/romain-dary</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://romain.dary.io/tags/lifestyle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://romain.dary.io/tags/general</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Author/Bio/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Author/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Author/Info/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Author/Url/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://romain.dary.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Licence/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://romain.dary.io/Tag/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://romain.dary.io/licence/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
