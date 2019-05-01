@@ -10,6 +10,7 @@ fill: #ccd1db;
 const Center = styled.div`
 text-align: center;
 margin-bottom: 100px;
+margin-top: 100px;
 `
 
 export default () => (

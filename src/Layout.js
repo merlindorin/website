@@ -5,18 +5,19 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
+import React                    from "react"
+import PropTypes                from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header    from "./components/Header"
-import Footer    from "./components/Footer"
-import Wrapper   from "./components/Wrapper"
+import Header  from "./containers/Header"
+import Main    from "./containers/Main"
+import Footer  from "./containers/Footer"
+
+import Wrapper from "./components/Wrapper"
 
 import "./styles/font.css"
 import "./styles/reset.css"
 import "./styles/styles.css"
-import Container from "./components/Container"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -38,16 +39,14 @@ const Layout = ({ children }) => (
       }
     `}
     render={({
-      site: {
-        siteMetadata: { title, social },
-      },
-    }) => (
+               site: {
+                 siteMetadata: { title, social },
+               },
+             }) => (
       <Wrapper>
-        <Header siteTitle={title} />
-        <Container>
-          {children}
-        </Container>
-        <Footer social={social} />
+        <Header siteTitle={title}/>
+        <Main children={children}/>
+        <Footer social={social}/>
       </Wrapper>
     )}
   />

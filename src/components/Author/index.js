@@ -15,7 +15,8 @@ import Info    from "./Info"
 import Url     from "./Url"
 import Bio     from "./Bio"
 
-const Entries = ({ entries }) => entries.map(entry => <PostEntry key={entry.frontmatter.title} {...entry.frontmatter}  {...entry.fields} />)
+const Entries = ({ entries }) => entries.map(entry => <PostEntry
+  key={entry.frontmatter.title} {...entry.frontmatter} {...entry.fields} />)
 
 const AuthorPage = (
   {
@@ -30,23 +31,21 @@ const AuthorPage = (
 ) => {
   return (
     <>
-      <Section>
-        <Avatar {...avatar}/>
-        <Info>
-          <H2 size={size.EXTRA}>{title}</H2>
-          <H1 size={size.DEFAULT}>{firstname} {lastname}</H1>
-          <Url href={social.website}>{social.website}</Url>
-          <Bio dangerouslySetInnerHTML={{ __html: bio }}/>
-          <Social
-            twitter={social.twitter}
-            linkedin={social.linkedin}
-            github={social.github}
-            instagram={social.instagram}
-            medium={social.medium}
-            keybase={social.keybase}
-          />
-        </Info>
-      </Section>
+      <Avatar {...avatar}/>
+      <Info>
+        <H2 size={size.EXTRA}>{title}</H2>
+        <H1 size={size.DEFAULT}>{firstname} {lastname}</H1>
+        <Url href={social.website}>{social.website}</Url>
+        <Bio dangerouslySetInnerHTML={{ __html: bio }}/>
+        <Social
+          twitter={social.twitter}
+          linkedin={social.linkedin}
+          github={social.github}
+          instagram={social.instagram}
+          medium={social.medium}
+          keybase={social.keybase}
+        />
+      </Info>
       <Next/>
       <Entries entries={entries}/>
     </>)
