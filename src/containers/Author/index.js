@@ -10,9 +10,9 @@ import H2        from "../../components/H2"
 import Next      from "../../components/Next"
 import Avatar    from "../../components/Avatar"
 
-import Info    from "./Info"
-import Url     from "./Url"
-import Bio     from "./Bio"
+import Info from "./Info"
+import Url  from "./Url"
+import Bio  from "./Bio"
 
 const Entries = ({ entries }) => entries.map(entry => <PostEntry
   key={entry.frontmatter.title} {...entry.frontmatter} {...entry.fields} />)

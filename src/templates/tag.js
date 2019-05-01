@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import TagPage   from "../pages/Tag"
+import TagPage   from "../containers/Tag"
 import PostEntry from "../components/PostEntry"
 
 const Entries = ({ entries }) => {
