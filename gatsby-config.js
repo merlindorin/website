@@ -22,6 +22,12 @@ module.exports = {
         component: require.resolve(`./src/Layout`)
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-139414063-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
