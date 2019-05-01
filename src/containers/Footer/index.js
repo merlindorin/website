@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Social from "../../components/Social"
 import Bullet from "../../components/Bullet"
 
-import Footer     from "./Footer"
+import Footer        from "./Footer"
 import Copyright     from "./Copyright"
 import Disclaimer    from "./Disclaimer"
 import PublishedWith from "./PublishedWith"
@@ -48,6 +48,32 @@ const StyledCopyright = styled(Copyright)`
   }
 `
 
+const ForkMe = styled(PublishedWith)`
+  padding-left: 10px;
+  
+  &::before {
+    content: '•';
+    left: -5px;
+    position:relative;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    padding: 0;
+    display: block;
+  
+    &::before {
+      display: none;
+    }
+  }
+
+`
+
+const PublishWithGatsby = styled(PublishedWith)`
+  @media only screen and (max-width: 1024px) {
+    display: block;
+  }
+`
+
 export default ({ social: { github, linkedin, medium, instagram, twitter, keybase } }) => (
   <StyledFooter>
     <StyledCopyright>
@@ -58,8 +84,10 @@ export default ({ social: { github, linkedin, medium, instagram, twitter, keybas
         <Spliter/>
         Made With <HeartIcon/> & <CoffeeIcon/>
       </Disclaimer>
-      <PublishedWith href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby.</PublishedWith>
-      <PublishedWith href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby.</PublishedWith>
+      <div>
+        <PublishWithGatsby href="https://www.gatsbyjs.org" target="_blank">Published with Gatsby</PublishWithGatsby>
+        <ForkMe href="https://github.com/iam-merlin/website" target="_blank">Fork me on Github.</ForkMe>
+      </div>
     </StyledCopyright>
     <StyledSocial
       github={github}
