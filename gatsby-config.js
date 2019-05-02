@@ -106,7 +106,10 @@ module.exports = {
         name: `Romain DARY Website`,
         short_name: `website`,
         start_url: `/`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
+        background_color: `#f7f0eb`,
+        theme_color: `#014fb0`,
+        display: `standalone`,
       },
     },
     {
