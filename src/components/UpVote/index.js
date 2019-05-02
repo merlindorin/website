@@ -23,7 +23,7 @@ export default (props) => (
   <Upvote {...props} href="https://github.com/iam-merlin/website/labels/post">
     <StyledAnnouncement/>
     <p>
-      There is {props.posts.length} purposed article{props.posts.length > 1 ?  's' : ''}, vote for the next one...
+      There is {props.posts.length} propose article{props.posts.length > 1 ?  's' : ''}, vote for the next one...
     </p>
   </Upvote>
 )
