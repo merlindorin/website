@@ -14,7 +14,7 @@ const StyledLogo = styled(Logo)`
 
 export default (props) => (
   <LogoBox {...props}>
-    <Link to="/">
+    <Link title="homepage" to="/">
       <StyledLogo/>
     </Link>
   </LogoBox>

@@ -29,7 +29,7 @@ const Metadata = (
   <Wrapper>
     <Author>Posted by
       <StyledLink to={path}>
-        <Avatar {...img} />
+        <Avatar alt={`${firstname} ${lastname}`} {...img} />
         {firstname}&nbsp;{lastname}
       </StyledLink>
       <Published>

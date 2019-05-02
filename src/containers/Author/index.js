@@ -30,7 +30,7 @@ const AuthorPage = (
 ) => {
   return (
     <>
-      <Avatar {...avatar}/>
+      <Avatar alt={`${firstname} ${lastname}`} {...avatar} />
       <Info>
         <H2 size={size.EXTRA}>{title}</H2>
         <H1 size={size.DEFAULT}>{firstname} {lastname}</H1>

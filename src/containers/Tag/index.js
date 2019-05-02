@@ -7,7 +7,7 @@ import Avatar from "../../components/Avatar"
 
 const TagPage = ({ title, description, image }) => (
   <>
-    <Avatar {...image} />
+    <Avatar alt={title} {...image} />
     <H1 capitalize>{title}</H1>
     <Html content={description}/>
   </>

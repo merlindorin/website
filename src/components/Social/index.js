@@ -69,32 +69,38 @@ const SocialLink = styled.a`
   margin-right: 15px;
   padding: 5px;
   color: #ccd1d9;
+  
+  span {
+    text-indent:-9999px;
+    font-size: 0;
+    color: transparent; 
+  }
 `
 
 export default ({ twitter, github, linkedin, instagram, medium, keybase, className }) => (
   <Social className={className}>
     {twitter
-      ? <SocialLink href={twitter}><TwitterIconStyled/></SocialLink>
+      ? <SocialLink title="twitter" href={twitter}><span>Twitter</span><TwitterIconStyled/></SocialLink>
       : null
     }
     {github
-      ? <SocialLink href={github}><GithubIconStyled/></SocialLink>
+      ? <SocialLink title="github" href={github}><span>GitHub</span><GithubIconStyled/></SocialLink>
       : null
     }
     {linkedin
-      ? <SocialLink href={linkedin}><LinkedinIconStyled/></SocialLink>
+      ? <SocialLink title="linjedin" href={linkedin}><span>LinkedIn</span><LinkedinIconStyled/></SocialLink>
       : null
     }
     {instagram
-      ? <SocialLink href={instagram}><InstagramIconStyled/></SocialLink>
+      ? <SocialLink title="instagram" href={instagram}><span>Instagram</span><InstagramIconStyled/></SocialLink>
       : null
     }
     {medium
-      ? <SocialLink href={medium}><MediumIconStyled/></SocialLink>
+      ? <SocialLink title="medium" href={medium}><span>Medium</span><MediumIconStyled/></SocialLink>
       : null
     }
     {keybase
-      ? <SocialLink href={keybase}><KeybaseStyled/></SocialLink>
+      ? <SocialLink title="keybase" href={keybase}><span>Keybase</span><KeybaseStyled/></SocialLink>
       : null
     }
   </Social>
