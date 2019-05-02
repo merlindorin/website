@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Romain DARY`,
@@ -15,6 +17,37 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        // token: required by the GitHub API
+        token: process.env.GITHUB_PERSONAL_TOKEN,
+
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: `
+          query {
+            repository(owner:"iam-merlin", name:"website") {
+              issues(last:20, states:OPEN, labels:["post"]) {
+                edges {
+                  node {
+                    title
+                    body
+                    url
+                    labels(first:5) {
+                      edges {
+                        node {
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `,
+      }
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-layout`,
