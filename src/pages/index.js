@@ -15,13 +15,23 @@ const StyledUpVote = styled(UpVote)`
   }
 `
 
-const postEntries = (edges) => edges.map(edge => (
-  <PostEntry
-    key={edge.node.id}
-    {...edge.node.frontmatter}
-    {...edge.node.fields}
-  />
-))
+const postEntries = (edges) => edges.map(edge => {
+  if (edge.node.frontmatter.type === 'post') {
+    return (
+      <PostEntry
+        key={edge.node.id}
+        {...edge.node.frontmatter}
+        {...edge.node.fields}
+      />
+    )
+  }
+
+  if (edge.node.frontmatter.type === 'quote') {
+    return (
+      <QuoteEntry author={edge.node.frontmatter.author} html={edge.node.html} />
+    )
+  }
+})
 
 export default res => (
   <>
@@ -40,10 +50,6 @@ const IndexPage = (
 ) => (
   <Index>
     <StyledUpVote posts={posts}/>
-    <QuoteEntry author="Antoine de Saint-Exupéry">
-      La perfection est atteinte, non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il n'y a plus rien à
-      retirer.
-    </QuoteEntry>
     {postEntries(edges)}
   </Index>
 )
@@ -75,16 +81,18 @@ export const pageQuery = graphql`
     
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "post" } } }
+      filter: { frontmatter: { type: {in: ["post", "quote"] } } }
     ) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
+          html
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            type
             tags
             author
             excerpt
