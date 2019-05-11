@@ -4,4 +4,4 @@ date: "2019-05-11"
 author: "Antoine de Saint-Exupéry"
 ---
 
-La perfection est atteinte, non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il n'y a plus rien à retirer.
+Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
