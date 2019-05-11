@@ -5,7 +5,6 @@ import Index       from "./../containers/Index"
 
 import PostEntry  from "../components/PostEntry"
 import QuoteEntry from "../components/QuoteEntry"
-import Entry      from "../components/Entry"
 import SEO        from "../components/seo"
 import styled     from "styled-components"
 
@@ -31,6 +30,8 @@ const postEntries = (edges) => edges.map(edge => {
       <QuoteEntry author={edge.node.frontmatter.author} html={edge.node.html} />
     )
   }
+
+  return null;
 })
 
 export default res => (
