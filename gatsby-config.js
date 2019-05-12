@@ -4,7 +4,17 @@ module.exports = {
   siteMetadata: {
     title: `Romain DARY`,
     siteUrl: `https://romain.dary.io`,
-    description: `Personal Website.`,
+    description: `Romain DARY is a digital architect, developer advocate, senior engineer, and occasional
+      designer. He builds quality projects that focus on customer value with an high performance perspective.
+      He lives today in Paris, France.`,
+    keywords: [
+      'architect',
+      'developer',
+      'designer',
+      'opensource',
+      'tech addict',
+      'personal website',
+    ],
     author: `@iam-merlin`,
     social: {
       website: "https://romain.dary.io",

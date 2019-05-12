@@ -27,19 +27,30 @@ const postEntries = (edges) => edges.map(edge => {
 
   if (edge.node.frontmatter.type === 'quote') {
     return (
-      <QuoteEntry author={edge.node.frontmatter.author} html={edge.node.html} />
+      <QuoteEntry
+        key={edge.node.id}
+        author={edge.node.frontmatter.author}
+        html={edge.node.html}
+      />
     )
   }
 
   return null;
 })
 
-export default res => (
-  <>
-    <SEO title="Welcome"/>
-    <IndexPage {...res} />
-  </>
-)
+export default res => {
+  return (
+    <>
+      <SEO
+        title="Welcome"
+        description={res.data.site.siteMetadata.description}
+        keywords={res.data.site.siteMetadata.keywords}
+        lang="en"
+      />
+      <IndexPage {...res} />
+    </>
+  )
+}
 
 const IndexPage = (
   {
@@ -79,6 +90,22 @@ export const pageQuery = graphql`
         }
       }
     }
+    
+    site {
+          siteMetadata {
+            title
+            description
+            keywords
+            social {
+              github
+              linkedin
+              medium
+              instagram
+              twitter
+              keybase
+            }
+          }
+        }
     
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
