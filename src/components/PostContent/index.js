@@ -3,12 +3,18 @@ import styled    from "styled-components"
 import PropTypes from "prop-types"
 
 const Content     = styled.div`
+padding-top: 48px;
+
 hr {
     width: 100%;
     height: 1px;
     margin: 58px 0;
     border: 0;
     background: #d8d8d8
+}
+
+em {
+  font-style: italic;
 }
 
 @media (max-width: 720px) {
@@ -26,7 +32,7 @@ hr {
 p {
     font-size: 18px;
     line-height: 38px;
-    margin: 38px 0;
+    margin: 0 0 24px 0;
     color: #535763
 }
 
@@ -50,7 +56,7 @@ h1,h2 {
     font-size: 33px;
     font-weight: 700;
     line-height: 43px;
-    margin: 48px 0 44px;
+    margin: 48px 0 24px;
     color: #212228
 }
 
@@ -58,7 +64,7 @@ h1,h2 {
     h1,h2 {
         font-size:28px;
         line-height: 38px;
-        margin: 38px 0 34px
+        margin: 38px 0 19px;
     }
 }
 
@@ -66,7 +72,7 @@ h1,h2 {
     h1,h2 {
         font-size:26px;
         line-height: 38px;
-        margin: 34px 0 30px
+        margin: 30px 0 15px;
     }
 }
 
@@ -74,7 +80,7 @@ h3 {
     font-size: 28px;
     font-weight: 700;
     line-height: 38px;
-    margin: 48px 0 44px;
+    margin: 24px 0 12px;
     color: #212228
 }
 
@@ -82,7 +88,7 @@ h3 {
     h3 {
         font-size:24px;
         line-height: 34px;
-        margin: 38px 0 34px
+        margin: 20px 0 10px;
     }
 }
 
@@ -90,7 +96,7 @@ h3 {
     h3 {
         font-size:22px;
         line-height: 32px;
-        margin: 34px 0 30px
+        margin: 15px 0 7px;
     }
 }
 
@@ -99,7 +105,7 @@ h4 {
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
-    margin: 48px 0 44px;
+    margin: 24px 0 12px;
     color: #a6a9b3
 }
 
@@ -107,7 +113,7 @@ h4 {
     h4 {
         font-size:21px;
         line-height: 31px;
-        margin: 38px 0 34px
+        margin: 20px 0 10px;
     }
 }
 
@@ -115,7 +121,7 @@ h4 {
     h4 {
         font-size:19px;
         line-height: 29px;
-        margin: 34px 0 30px
+        margin: 15px 0 7px;
     }
 }
 
@@ -124,7 +130,7 @@ h5,h6 {
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
-    margin: 48px 0 44px;
+    margin: 24px 0 12px;
     color: #a6a9b3
 }
 
@@ -132,7 +138,7 @@ h5,h6 {
     h5,h6 {
         font-size:20px;
         line-height: 30px;
-        margin: 38px 0 34px
+        margin: 20px 0 10px;
     }
 }
 
@@ -140,14 +146,39 @@ h5,h6 {
     h5,h6 {
         font-size:18px;
         line-height: 28px;
-        margin: 34px 0 30px
+        margin: 15px 0 7px;
     }
 }
+
+p a, ul a {
+  text-decoration: none;
+  
+  &::after {
+      position: absolute;
+      content: '';
+      border-bottom: 1px dashed #e7ecf1;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 5px;
+    }
+    
+    :hover {
+      color: #014fb0;
+      
+      &::after {
+        border-bottom-color: #014fb0;
+      }
+    }
+}
+
 a {
     font-weight: 600;
     color: #535763;
     -webkit-text-decoration-color: #e7ecf1;
-    text-decoration-color: #e7ecf1
+    text-decoration-color: #e7ecf1;
+    position: relative; 
 }
 
 a:hover {
@@ -338,7 +369,7 @@ blockquote p {
     font-weight: 600;
     font-style: italic;
     line-height: 44px;
-    margin: 0 0 15px;
+    margin: 15px 0;
     color: #34373e
 }
 
@@ -391,13 +422,12 @@ blockquote footer a,blockquote cite a {
 }
 
 ul {
-    margin: 48px 0 48px 44px;
-    padding: 0
+    margin:38px 0 38px 34px;
 }
 
 @media (max-width: 720px) {
     ul {
-        margin:38px 0 38px 24px
+        margin:30px 0 30px 24px
     }
 }
 
@@ -407,11 +437,25 @@ ul {
     }
 }
 
+strong {
+  font-weight: bold;
+  color: #222222;
+}
+
 li,ol {
-    line-height: 38px;
-    max-width: 660px;
-    margin-bottom: 28px;
-    padding-left: 24px
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 660px;
+  margin-bottom: 18px;
+  color: #535763;
+}
+
+li {
+  &::before {
+    content: "•";
+    color: #014fb0;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 720px) {
