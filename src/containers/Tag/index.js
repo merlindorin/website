@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 import Html   from "../../components/PostContent"
 import H1     from "../../components/H1"
-import Avatar from "../../components/Avatar"
 
 const TagPage = ({ title, description, image }) => (
   <>
