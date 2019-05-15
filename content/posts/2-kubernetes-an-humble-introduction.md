@@ -112,4 +112,3 @@ The next article will take a look at core concepts of the Kubernetes ecosystem t
 
 After, we will try to answer the question: "How Kubernetes can help us succeed into the digital transformation and how we can use it to embrace the XaaS concept?".
 
-Finally, a maturity model related to the Kubernetes adoption into the enterprise should emerged and we will define it.**(pas compris cette phrase, déso)**
