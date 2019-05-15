@@ -28,6 +28,7 @@ export const pageQuery = graphql`
         title
         author
         tags
+        source
       }
       fields {
         readingTime {

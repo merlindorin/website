@@ -4,6 +4,7 @@ path: "/kubernetes-an-humble-introduction"
 date: "2019-05-12"
 title: "Kubernetes, an humble introduction"
 author: "romain-dary"
+source: "https://github.com/iam-merlin/website/blob/master/content/posts/2-kubernetes-an-humble-introduction.md"
 tags:
     - digital transformation
     - development
@@ -11,9 +12,26 @@ tags:
     - architecture
 
 excerpt: "Kubernetes became in a few years the reference orchestrator. After having supplanted Swarm, the solution remains the leader against its competitors. Behind the hype, we have to understand what Kubernetes enable to our organisation and why its adoption is crucial."
+
 ---
 
-_Kubernetes became in a few years the reference orchestrator. After having supplanted Docker Swarm, the solution remains the leader against its competitors. Behind the hype, we have to understand what Kubernetes enable to our organization and why its adoption is crucial._
+
+_Kubernetes became in a few years the reference orchestrator.
+After having supplanted Docker Swarm, the solution remains the leader against its competitors.
+Behind the hype, we have to understand what Kubernetes enable to our
+organization and why its adoption is crucial._
+
+## tl;dr
+
+This post is really common at the beginning, I let you below pick the part that fit you interest :
+
+- [At the beginning, it was all about containers](#at-the-beginning-it-was-all-about-containers)
+- [Kubernetes definition](#kubernetes-definition)
+- [Kubernetes as an Ops tool](#kubernetes-as-an-ops-tool)
+- [Kubernetes as an enabler](#kubernetes-as-an-enabler)
+- [Last words](#last-words)
+- [What's next](#whats-next)
+
 
 ## At the beginning, it was all about containers
 The initial revolution has been made by Docker and its containerized approach. 
@@ -24,7 +42,7 @@ This is indisputable and, now, Docker or any container engine must be a part of 
 
 While the container approach answer to the application packaging... the exploitation is still unanswered and that's why Kubernetes come into the spotlights.
 
-## Kubernetes as an Ops tool
+## Kubernetes definition
 
 Kubernetes is an orchestrator and so on manage containers. It means that we can run our application on a cluster with a fully managed container engine.
 
@@ -45,7 +63,7 @@ And because it embraces the digital world, Kubernetes is fully (and should uniqu
 
 Kubernetes is not just an orchestrator, it's far more.
 
-## Kubernetes as an enabler
+## Kubernetes as an Ops tool
 
 At a naive stage, the Kubernetes API and its core are unseen. We just use `kubectl` and some tools like `k9s` or `helm`.
 
@@ -53,14 +71,14 @@ If we dig a little deeper, we can see that the Kubernetes world is working mainl
 
 In fact, the Kubernetes world is moving fast by providing new tools and services that use the Kubernetes core. The goal is to embrace the key principle of DevOps : "automate everything".
 
-## Kubernetes manage resources
+## Kubernetes as an enabler
 
 The Kubernetes core is a full stateless application centered on resources manipulation with scalability and lifecycle in mind :
 
 - **The Configuration and Resources** are stored into a high availability key-value store
 - **The API server** provides all the operation available on the cluster
-- **The Controller Manager** which is responsible for most of the collectors that regulates the state of cluster and performs a task
-- **The Scheduler** which manages the workload
+- **The Controller Manager** is responsible for most of the collectors that regulates the state of cluster and performs a task
+- **The Scheduler** manages the workload
 
 The API Server is the only component that is normally accessible. This is one of the best API I have ever seen. The API fully capitalized on the Kubernetes core to expose all operations and mainly resources available on the cluster. 
 
@@ -71,9 +89,9 @@ To do that and because the API is resource oriented, it will expose four methods
 - Update
 - Delete
 
-Kubernetes is also "reactive", that's why we can also "Watch" resources states and so work on streams.
+Kubernetes is also "reactive", that's why we can "Watch" resources states and so work on streams.
 
-As we have seen, Kubernetes is by definition expandable. That's why we can integrate Kubernetes :
+So, Kubernetes is by definition expandable and everything is done to a thin integration :
 
 - by creating new kind of resource (CRD : Custom Resource Definition) 
 - by using lifecycle hooks (initializer, finalizers, etc.).
@@ -83,7 +101,7 @@ Kubernetes is from far more than a tool, neither just an orchestrator... from my
 ## Last words
 
 To finish this humble introduction, if Kubernetes is a **DevOps Framework**, we have to explain :
-- "Why we need a DevOps framework" 
+- "Why we need a DevOps framework?" 
 - ... and "How to use Kubernetes to fulfil our goals?".
 
 If you are hasty, you should have a look to these links :
