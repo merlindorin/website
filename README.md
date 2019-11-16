@@ -1,5 +1,5 @@
 # Website
 
-[![Build Status](https://travis-ci.org/iam-merlin/website.svg?branch=master)](https://travis-ci.org/iam-merlin/website)
+[![Build Status](https://travis-ci.org/merlindorin/website.svg?branch=develop)](https://travis-ci.org/merlindorin/website)
 
 WIP - CHeck it out ~> [https://romain.dary.io]
