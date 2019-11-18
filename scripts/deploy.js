@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/iam-merlin/website.git',
+    repo: 'https://github.com/merlindorin/website.git',
   },
   () => {
     console.log('Deploy Complete!')

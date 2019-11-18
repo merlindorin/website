@@ -20,7 +20,7 @@ const Upvote = styled.a`
 `
 
 export default (props) => (
-  <Upvote {...props} href="https://github.com/iam-merlin/website/labels/post">
+  <Upvote {...props} href="https://github.com/merlindorin/website/labels/post">
     <StyledAnnouncement/>
     <p>
       There is {props.posts.length} propose article{props.posts.length > 1 ?  's' : ''}, vote for the next one...

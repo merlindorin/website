@@ -4,7 +4,7 @@ path: "/kubernetes-an-humble-introduction"
 date: "2019-05-12"
 title: "Kubernetes, an humble introduction"
 author: "romain-dary"
-source: "https://github.com/iam-merlin/website/blob/master/content/posts/2-kubernetes-an-humble-introduction.md"
+source: "https://github.com/merlindorin/website/blob/master/content/posts/2-kubernetes-an-humble-introduction.md"
 tags:
     - digital transformation
     - development

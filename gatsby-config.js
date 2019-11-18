@@ -15,12 +15,12 @@ module.exports = {
       'tech addict',
       'personal website',
     ],
-    author: `@iam-merlin`,
+    author: `@merlindorin`,
     social: {
       website: "https://romain.dary.io",
       twitter: "https://twitter.com/iam_merlin",
       linkedin: "https://fr.linkedin.com/in/romaindary",
-      github: "https://github.com/iam-merlin",
+      github: "https://github.com/merlindorin",
       instagram: "https://www.instagram.com/iam_merlin",
       medium: "https://medium.com/@iam_merlin",
       keybase: "https://keybase.io/merlindorin",
@@ -36,7 +36,7 @@ module.exports = {
         // GraphQLquery: defaults to a search query
         graphQLQuery: `
           query {
-            repository(owner:"iam-merlin", name:"website") {
+            repository(owner:"merlindorin", name:"website") {
               issues(last:20, states:OPEN, labels:["post"]) {
                 edges {
                   node {

@@ -3,7 +3,7 @@ type: post
 path: "/write-a-technical-blog"
 date: "2019-04-07"
 title: "Should I write a technical blog"
-source: "https://github.com/iam-merlin/website/blob/master/content/posts/1-write-a-technical-blog.md"
+source: "https://github.com/merlindorin/website/blob/master/content/posts/1-write-a-technical-blog.md"
 author: "romain-dary"
 tags:
     - lifestyle
