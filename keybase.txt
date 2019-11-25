@@ -1,0 +1,57 @@
+
+==================================================================
+https://keybase.io/merlindorin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://romain.dary.io
+  * I am merlindorin (https://keybase.io/merlindorin) on keybase.
+  * I have a public key ASAOoCPUT9PdVYstc7Z7ez-N34weQoOCJTCx-70ilR6u2wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c28c46f7e6c73110e1fd26fbbd04acd8366f32d78b6a69535a0142dce5e7603e0a",
+      "host": "keybase.io",
+      "kid": "01200ea023d44fd3dd558b2d73b67b7b3f8ddf8c1e4283822530b1fbbd22951eaedb0a",
+      "uid": "b612d4651e6f376a0802be7e0770c519",
+      "username": "merlindorin"
+    },
+    "merkle_root": {
+      "ctime": 1574690659,
+      "hash": "e30c7d2662cd3618f20e1424f3c4d71d223128118c0281ec6482b8a7af2d216d59aaef47438edb9956f5c00cffc4d666fca14aa797b955e200b3824bdd12da12",
+      "hash_meta": "d4b53ccc20f933c7e71cc33528ab23d36261f472943705606d85e9d5d019a1da",
+      "seqno": 10821642
+    },
+    "service": {
+      "entropy": "Ci/nA6mbMgHO/Q8RYeCMsmoj",
+      "hostname": "romain.dary.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574690669,
+  "expire_in": 504576000,
+  "prev": "7a873d2b3f237ba48d53db9c6c0ff58ebac7e2b486330e18bf549489a8e97ce2",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDqAj1E/T3VWLLXO2e3s/jd+MHkKDgiUwsfu9IpUertsKp3BheWxvYWTESpcCHcQgeoc9Kz8je6SNU9ucbA/1jrrH4rSGMw4Yv1SUiajpfOLEIN3ChVBd66zq/FAzQkY8a79SaxyMp79lSxeJgFId0DDVAgHCo3NpZ8RA8y9oKo796WLziwjaSIQNLBVC86/LS6qN6Ullga451nf0WtQd4phK0a2lm1W/zObDpF5iqvvjPAM4vwgtCMzOAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEkAnfLC9dgIbABXVvL0HPgWobqwJwcsziybO9S3xWSFo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/merlindorin
+
+==================================================================
