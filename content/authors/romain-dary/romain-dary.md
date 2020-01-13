@@ -16,7 +16,7 @@ social:
   keybase: https://keybase.io/merlindorin
 ---
 
-Architecte Logiciel et Système, mon évolution professionnel ainsi que mon parcours entrepreunarial m'ont permis de développer des compétences solides dans la modélisation de systèmes complexe. Cette expérience ce reflète dans les projets que j'ai pu mener et que vous pouvez consulter sur mon profil.
+Architecte Logiciel et Système, mon évolution professionnel ainsi que mon parcours entrepreunarial m'ont permis de développer des compétences solides dans la modélisation de systèmes complexe. Cette expérience ce refléte dans les projets que j'ai pu mener et que vous pouvez consulter sur mon profil.
 
 Mon expérience est centrée sur la gestion d'équipes technique, le design d'applications & de systèmes et la gestion du cycle de vie d'un produit (livraison, qualité, recette, maintenance, production, amélioration...).
 
